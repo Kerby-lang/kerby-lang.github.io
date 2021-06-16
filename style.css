@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body,
+.container{
+    margin: 0;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin: 8rem;
+    width: 80%;
+
+}
+
+.advertising{
+    width: min(400px,80%);
+}
+
+h1{
+    font-family: 'Spartan', sans-serif;
+    color:  hsl(300, 43%, 22%);
+    font-size: 3em;
+}
+
+p{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.ratings{
+    margin-top: 1.8rem;
+    position: relative;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    color:  hsl(300, 43%, 22%);
+    font-size: 13px;
+    position: relative;
+    right: 8%;
+    
+    
+}
+.bg-desktop-top{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    max-width: 100%;
+}
+
+.bg-desktop-bot{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    max-width: 100%;
+}
+
+.another-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedbacks{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.We{
+    width: min(160%,800px);
+    line-height: 1.5;
+    color:  hsl(303, 10%, 53%);
+}
+
+/*ratings*/
+.rating-one{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+
+    
+}
+.rating-two{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    position: relative;
+    left: 10%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+
+}
+.rating-three{
+    background-color: hsl(300, 24%, 96%);
+    position: relative;
+    left: 20%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+   
+}
+
+.star{
+    width: 15px;
+}
+
+span{
+    margin-left: 10px;
+}
+
+ .person{
+    
+     width: 50px;
+     border-radius: 25px;
+     position: relative;
+     top:20px;
+     margin-right: 20px;
+     max-width: 100%;
+ }
+
+ h4{
+    font-family: 'Spartan', sans-serif;
+    color: hsl(0, 0%, 100%);
+ }
+
+ h5{
+    position: relative;
+    left: 80px;
+     bottom: 18px;
+     font-family: 'Spartan', sans-serif;
+     font-weight: 200;
+     color: hsl(333, 80%, 67%);
+
+ }  
+
+ .feedback-one,
+ .feedback-two,
+ .feedback-three{
+     background-color: hsl(300, 43%, 22%);
+     margin-right: 30px;
+     border-radius: 10px;
+     padding: 30px 50px;
+     width: min(400px,80%);
+ }
+ .feedback-two{
+     position: relative;
+     top: 20px;
+ }
+ .feedback-three
+{
+    position: relative;
+    top: 40px;
+}
+
+ .comment{
+     color: hsl(0, 0%, 100%);
+     font-size: 13px;
+     line-height: 2;
+ }
+
+ .inline,
+ h4{
+     display: inline;
+ }
+
+@media (max-width:1240px){
+    .feedback-one,
+    .feedback-two,
+    .feedback-three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h5{
+        left: 0%;
+        bottom: 30px;
+    }
+    .comment{
+        position: relative;
+        bottom: 40px;
+    }
+
+    .ratings{
+        right: 0;
+    }
+}
+
+@media (max-width:800px){
+    .body,
+    .container,
+    .another-container,
+    .feedbacks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    h1,
+    p{
+        text-align: center;
+    }
+
+    .rating-one,
+    .rating-two,
+    .rating-three{
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2;
+        padding: 20px 100px;
+    }
+    .ratings{
+        margin-bottom: 50px;
+        font-size: 10px;
+    }
+
+    .We{
+        width: min(358px,90%);
+    }
+
+    .bg-desktop-bot{
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+    }
+
+  
+
+}
+
+
